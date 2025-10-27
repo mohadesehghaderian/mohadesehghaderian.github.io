@@ -1,264 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohadeseh Ghaderian | Academic Portfolio</title>
-  <!-- FontAwesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-rUA0KjuHSy9dY96NWKuMaBzU3O0cZiXQDqmpvfFMkg4rT7A3tVSxIsDF4HcFj1ToIaFRGAnaTQZNG5qnP8+jNg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- AOS Animation library -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-  />
-  <!-- Custom styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohadeseh Ghaderian | Biotechnology</title>
+  <meta name="description" content="Biotechnology student & research lead — industrial microbiology, microbial biotechnology, gut–brain axis, indigenous biofertilizers." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <!-- Icons -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
 </head>
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar">
-    <div class="logo">Mohadeseh</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research-experience">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#honors">Honors</a></li>
-      <li><a href="#training">Training</a></li>
-      <li><a href="#volunteer">Volunteering</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero section with background image -->
-  <header class="hero">
-    <div class="hero-content" data-aos="zoom-in">
-      <h1>Mohadeseh Ghaderian</h1>
-      <p class="tagline">Innovative Biotechnologist &amp; Research Leader</p>
-    </div>
+<body>
+  <!-- NAV -->
+  <header class="navbar">
+    <a href="#top" class="brand">Mohadeseh</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#honors">Honors</a>
+      <a href="#training">Training</a>
+      <a href="#volunteering">Volunteering</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
   </header>
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="section">
-      <h2 data-aos="fade-right">About</h2>
-      <p data-aos="fade-up">
-        <strong>Mohadeseh Ghaderian</strong> is a passionate undergraduate pursuing a <strong>B.Sc. in Biotechnology</strong> at the
-        <strong>Islamic Azad University (Isfahan, Iran)</strong> since September&nbsp;2023, boasting a
-        <strong>GPA of 3.43/4.00</strong>. Her diverse research interests span
-        <strong>industrial microbiology</strong>, <strong>microbial biotechnology</strong>,
-        <strong>agricultural biotechnology</strong> and <strong>genetic engineering</strong>.
-        Mohadeseh is not only academically outstanding but also a
-        visionary leader who translates scientific insights into
-        meaningful applications. Whether designing next‑generation
-        fertilizers, decoding the <em>gut–brain axis</em> or isolating
-        indigenous biofertilizer consortia, she approaches challenges
-        with creativity and perseverance. Beyond the laboratory, she
-        actively mentors students, organizes TEDx programs and teaches
-        cutting‑edge AI courses, embodying a holistic commitment to
-        science and society.
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <canvas id="hero-bg" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <h1 class="title shimmer">
+        <span>Mohadeseh</span> <span>Ghaderian</span>
+      </h1>
+      <p class="subtitle typewriter">
+        <span id="typewriter"></span>
       </p>
-    </section>
+      <div class="stats">
+        <div class="stat-card" data-animate="fade-up">
+          <div class="stat-value"><span class="counter" data-to="3.43" data-decimals="2">0</span> / 4.00</div>
+          <div class="stat-label">GPA (B.Sc. in Biotechnology)</div>
+        </div>
+        <div class="stat-card" data-animate="fade-up" data-delay="0.05">
+          <div class="stat-value">2023 → <span class="counter" data-to="2025">0</span></div>
+          <div class="stat-label">Active research years</div>
+        </div>
+        <div class="stat-card" data-animate="fade-up" data-delay="0.1">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Major projects & manuscripts</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
 
-    <!-- Research Experience Section -->
-    <section id="research-experience" class="section">
-      <h2 data-aos="fade-right">Research Experience</h2>
-
-      <!-- Psychobiotics Project -->
-      <div class="experience" data-aos="fade-up" data-aos-delay="50">
-        <h3>Psychobiotics &amp; the Gut–Brain Axis (Sep&nbsp;2025&nbsp;–&nbsp;Present)</h3>
-        <ul>
-          <li><strong>First author &amp; project lead:</strong> spearheaded a pioneering review exploring how the
-            intestinal microbiome shapes mood and mental health via neural,
-            immune and metabolic pathways.</li>
-          <li>Designed a <strong>PRISMA‑inspired protocol</strong>, implemented a transparent screening and
-            data‑extraction pipeline and coordinated with collaborators to
-            ensure inter‑rater reliability.</li>
-          <li>Synthesized mechanistic evidence on neuroactive metabolites—
-            including <em>GABA</em>, <em>tryptophan derivatives</em> (indoles/kynurenines),
-            <em>short‑chain fatty acids</em> (SCFAs), secondary bile acids, lactate and
-            catecholamines—and linked them to behavioral and clinical endpoints.</li>
-        </ul>
-      </div>
-
-      <!-- Salt‑Mitigating Fertilizer Project -->
-      <div class="experience" data-aos="fade-up" data-aos-delay="100">
-        <h3>Salt‑Mitigating Fertilizer Design (Oct&nbsp;2024&nbsp;–&nbsp;Aug&nbsp;2025)</h3>
-        <ul>
-          <li><strong>Undergraduate research lead:</strong> managed an end‑to‑end agri‑materials project to design
-            fertilizers that reduce soil salinity stress on vegetables and
-            cucurbits, aligning faculty advisors, suppliers and growers.</li>
-          <li>Conducted comprehensive soil diagnostics (electrical conductivity, pH,
-            texture, cation‑exchange capacity and nutrient status) and profiled
-            target crops to translate field constraints into actionable
-            design requirements.</li>
-          <li>Engineered <strong>innovative fertilizer formulations</strong> that balance ion
-            management and osmotic adjustment strategies while minimizing
-            phytotoxicity and environmental footprint.</li>
-          <li>Developed a lean experimentation pipeline for greenhouse and field
-            trials, implemented quality‑assurance checklists and mentored
-            teammates on safe and reproducible lab practices.</li>
-          <li><strong>Secured competitive funding</strong> to transition the project into pilot
-            implementation and earned <strong>second place</strong> in the Iran National Elites
-            Foundation competition.</li>
-        </ul>
-      </div>
-
-      <!-- Indigenous Biofertilizer Program -->
-      <div class="experience" data-aos="fade-up" data-aos-delay="150">
-        <h3>Microbiome‑Driven Indigenous Biofertilizer Program (Jan&nbsp;2024&nbsp;–&nbsp;Dec&nbsp;2024)</h3>
-        <ul>
-          <li><strong>Sole research intern:</strong> executed targeted sampling, isolation and
-            functional characterization of soil microbiomes to identify
-            fertility‑enhancing consortia.</li>
-          <li>Established end‑to‑end lab workflows—sampling logistics, aseptic
-            handling, culturing and basic functional assays—with meticulous
-            documentation and quality control.</li>
-          <li>Defined selection criteria around efficacy, stability and safety to
-            advance the strongest strains, supporting the transition from
-            discovery to productization.</li>
-          <li>Results underpin two ongoing M.Sc. theses investigating
-            biofertilizer performance on Iranian medicinal plant seedlings.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-      <h2 data-aos="fade-right">Publications</h2>
-      <p data-aos="fade-up">
-        Mohadeseh’s research contributions are already making waves. She is
-        preparing manuscripts that integrate biotechnology with materials
-        science and neuroscience. Upcoming papers include:
-      </p>
-      <div class="experience" data-aos="fade-up" data-aos-delay="50">
-        <h3>Bio‑Augmented Self‑Healing Concrete Using <em>Sporosarcina pasteurii</em> / <em>S. ureae</em></h3>
-        <p><strong>Authors:</strong> Mohadeseh Ghaderian, Farimah Safari.</p>
-        <p><strong>Planned submission:</strong> ISM&nbsp;2026.</p>
-        <p>This work leverages microbial induced calcium carbonate
-          precipitation (MICP) to create concrete that heals its own
-          cracks—an intersection of microbiology and civil engineering.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="100">
-        <h3>Biotechnological Approaches to Psychobiotics: Modulating Neuroactive
-          Metabolites for Mental Health</h3>
-        <p><strong>Authors:</strong> Mohadeseh Ghaderian, Shayan Sepehri, Zahra Mirkazemi,
-          Aynaz Lorian.</p>
-        <p><strong>Planned submission:</strong> <em>Neuroscience</em>.</p>
-        <p>This review dissects emerging strategies to engineer gut microbes
-          capable of producing metabolites that support mental well‑being.</p>
-      </div>
-    </section>
-
-    <!-- Honors & Awards Section -->
-    <section id="honors" class="section">
-      <h2 data-aos="fade-right">Honors &amp; Awards</h2>
-      <div class="experience" data-aos="fade-up" data-aos-delay="50">
-        <ul>
-          <li><strong>Half‑Marathon Finisher</strong> – completed the annual International
-            Kish Marathon (2024), showcasing her discipline and endurance.</li>
-          <li><strong>Runner‑Up, National Problem‑Based Competition</strong> – recognized for
-            developing an anti‑salinity fertilizer solution for vegetables and
-            succulents (2023).</li>
-          <li><strong>Third Place</strong> – Provincial metal pen painting competition (2017).</li>
-          <li><strong>Second Place</strong> – National metal pen painting competition (2016).</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Training & Certifications Section -->
-    <section id="training" class="section">
-      <h2 data-aos="fade-right">Training &amp; Certifications</h2>
-      <div class="experience" data-aos="fade-up" data-aos-delay="50">
-        <h3>Genetic Engineering &amp; Modern Biotechnology Workshop (Nov&nbsp;2023&nbsp;–&nbsp;Aug&nbsp;2024)</h3>
-        <p>Advanced workshop at the University of Isfahan; gained hands‑on experience
-          in recombinant DNA technology, gene cloning and CRISPR–Cas9 applications
-          for plant and microbial systems. Performed molecular analysis, gel
-          electrophoresis and transformation experiments in a research lab.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="100">
-        <h3>mRNA Technology in Research &amp; Medicine (Oct&nbsp;2024)</h3>
-        <p>National Biotechnology Organization, Tehran – studied the principles
-          of mRNA design, delivery systems and vaccine development with emphasis
-          on lipid nanoparticle formulations; reviewed case studies of mRNA
-          therapeutics and gene‑expression regulation strategies.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="150">
-        <h3>Astrobiology: From Introductory to Advanced Concepts (Aug&nbsp;2023)</h3>
-        <p>Online global program (NASA Astrobiology Institute) – explored
-          interdisciplinary topics in astrochemistry, extremophile biology and
-          planetary habitability; studied origin‑of‑life models and
-          biosignature detection relevant to Mars and exoplanets.</p>
-      </div>
-    </section>
-
-    <!-- Voluntary Collaborations Section -->
-    <section id="volunteer" class="section">
-      <h2 data-aos="fade-right">Voluntary Collaborations</h2>
-      <div class="experience" data-aos="fade-up" data-aos-delay="50">
-        <h3>TEDx University of Isfahan – Curation Member (Oct&nbsp;2024&nbsp;–&nbsp;Jun&nbsp;2025)</h3>
-        <p>Collaborated with the TEDx curation team to lead speaker selection,
-          develop talk narratives and refine storytelling. Enhanced
-          communication, teamwork and leadership skills through high‑impact
-          speaker mentoring and content design.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="100">
-        <h3>Rasta Association – Board Member (2024&nbsp;–&nbsp;Present)</h3>
-        <p>Contributed to curriculum design and outreach initiatives; mentored
-          underprivileged secondary students across Iran through hands‑on AI
-          workshops, strengthening team management, empathy and educational
-          design capabilities.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="150">
-        <h3>Course Instructor – Expert Systems (May&nbsp;2025)</h3>
-        <p>Designed and taught a course focusing on ecological algorithms such as
-          Ant Colony Optimization and Particle Swarm Optimization, linking their
-          biological inspirations to adaptive intelligent systems.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="200">
-        <h3>Course Instructor – Artificial Intelligence &amp; Genetic Algorithms (Jan&nbsp;2025)</h3>
-        <p>Covered Genetic Algorithms, Evolutionary Strategies and neural‑network
-          based optimization, emphasizing real‑world problem solving and
-          parameter tuning.</p>
-      </div>
-      <div class="experience" data-aos="fade-up" data-aos-delay="250">
-        <h3>Course Instructor – Autonomous Driving &amp; AI (Aug&nbsp;2024)</h3>
-        <p>Delivered lectures on deep‑learning vision algorithms (CNNs, object
-          detection, semantic segmentation) and core machine‑learning topics such
-          as gradient descent, regularization and model evaluation for
-          autonomous driving pipelines.</p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2 data-aos="fade-right">Contact</h2>
-      <p data-aos="fade-up">
-        Mohadeseh welcomes academic collaborations and discussions. Feel free to
-        reach out via email or connect through professional networks.
-      </p>
-      <div class="experience" data-aos="fade-up" data-aos-delay="50">
-        <p><i class="fa-solid fa-envelope"></i>&nbsp;
-          <a href="mailto:mohadesehghaderiyan1234@gmail.com">mohadesehghaderiyan1234@gmail.com</a>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title" data-animate="fade-up">About</h2>
+    <div class="content-grid">
+      <article class="card lift" data-animate="fade-up">
+        <p>
+          <strong>Mohadeseh Ghaderian</strong> is a driven undergraduate pursuing a
+          <strong>B.Sc. in Biotechnology</strong> at the <strong>Islamic Azad University (Isfahan, Iran)</strong> (since Sept&nbsp;2023),
+          currently holding a <strong>GPA 3.43/4.00</strong> (16.27/20). Her research interests span
+          <strong>industrial microbiology</strong>, <strong>microbial biotechnology</strong>, <strong>agricultural biotechnology</strong>,
+          and <strong>genetic engineering</strong>. She combines scientific rigor with initiative—leading teams, crafting
+          transparent screening pipelines, and translating biology into practical impact.
         </p>
-        <p><i class="fa-solid fa-location-dot"></i>&nbsp; Isfahan, Iran</p>
-        <p><i class="fa-solid fa-language"></i>&nbsp; Native Persian; Upper‑Intermediate English (B2)</p>
-      </div>
-    </section>
-  </main>
+      </article>
+      <figure class="card photo" data-animate="fade-up" data-delay="0.08" aria-label="DNA background">
+        <img src="dna_background.png" alt="DNA double helix visual" loading="lazy" />
+      </figure>
+    </div>
+  </section>
 
-  <footer>
-    &copy;&nbsp;2025&nbsp;Mohadeseh Ghaderian &mdash; All rights reserved.
-  </footer>
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <h2 class="section-title" data-animate="fade-up">Research Experience</h2>
 
-  <!-- AOS library script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <!-- Custom script -->
+    <article class="card lift" data-animate="fade-up">
+      <h3>Psychobiotics & the Gut–Brain Axis <span class="pill">First-author & project lead</span></h3>
+      <p class="muted">Dr. Zarrin-Dokht Emami Lab — Sep&nbsp;2025&nbsp;–&nbsp;Present</p>
+      <ul>
+        <li>Led a first-author review on how the intestinal microbiome modulates mood and mental health via neural, immune, and metabolic pathways.</li>
+        <li>Designed a <strong>PRISMA-inspired protocol</strong> for transparent screening & data extraction with inter-rater reliability.</li>
+        <li>Synthesized mechanistic evidence on neuroactive metabolites (GABA, tryptophan derivatives, SCFAs, secondary bile acids, lactate, catecholamines).</li>
+      </ul>
+    </article>
+
+    <article class="card lift" data-animate="fade-up" data-delay="0.06">
+      <h3>Salt-Mitigating Fertilizer Design for Vegetable & Cucurbit Nutrition <span class="pill">Undergraduate research lead</span></h3>
+      <p class="muted">National Elites Foundation — Oct&nbsp;2024&nbsp;–&nbsp;Aug&nbsp;2025</p>
+      <ul>
+        <li>Engineered <strong>innovative fertilizer formulations</strong> minimizing phytotoxicity while balancing ion management & osmotic adjustment.</li>
+        <li>Built a lean greenhouse/field experimentation pipeline with QA & safety checklists; coordinated cross-functional stakeholders.</li>
+        <li><strong>Recognition:</strong> Runner-up (INEF competition); <strong>Funding secured</strong> to transition into pilot implementation.</li>
+      </ul>
+    </article>
+
+    <article class="card lift" data-animate="fade-up" data-delay="0.12">
+      <h3>Microbiome-Driven Indigenous Biofertilizer Program <span class="pill">Sole research intern</span></h3>
+      <p class="muted">Dr. Zarrin-Dokht Emami Lab — Jan&nbsp;2024&nbsp;–&nbsp;Dec&nbsp;2024</p>
+      <ul>
+        <li>Identified & characterized soil-fertility–enhancing consortia; defined selection criteria on efficacy, stability, and safety.</li>
+        <li>Established end-to-end lab workflows (sampling, aseptic handling, culturing, functional assays) with robust documentation.</li>
+        <li>Supported transition from discovery to productization; outputs underpin two ongoing M.Sc. theses (seedling performance).</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section">
+    <h2 class="section-title" data-animate="fade-up">Publications (in preparation)</h2>
+
+    <article class="card list lift" data-animate="fade-up">
+      <h3>Bio-Augmented Self-Healing Concrete Using <em>Sporosarcina pasteurii</em> / <em>S. ureae</em> (MICP)</h3>
+      <p><strong>Authors:</strong> Mohadeseh Ghaderian, Farimah Safari. <strong>Planned submission:</strong> ISM 2026.</p>
+      <p class="muted">Leveraging microbially induced calcium carbonate precipitation to heal cracks — bridging microbiology and civil engineering.</p>
+    </article>
+
+    <article class="card list lift" data-animate="fade-up" data-delay="0.06">
+      <h3>Biotechnological Approaches to Psychobiotics: Modulating Neuroactive Metabolites for Mental Health</h3>
+      <p><strong>Authors:</strong> Mohadeseh Ghaderian, Shayan Sepehri, Zahra Mirkazemi, Aynaz Lorian. <strong>Planned submission:</strong> Neuroscience.</p>
+      <p class="muted">Surveying strategies to engineer gut microbes for metabolite production that supports mental well-being.</p>
+    </article>
+  </section>
+
+  <!-- HONORS -->
+  <section id="honors" class="section">
+    <h2 class="section-title" data-animate="fade-up">Honors & Awards</h2>
+    <div class="timeline">
+      <div class="tick" data-animate="fade-up"><span class="year">2024</span> Half-Marathon Finisher — International Kish Marathon</div>
+      <div class="tick" data-animate="fade-up" data-delay="0.06"><span class="year">2023</span> Runner-Up — National Problem-Based Competition (anti-salinity fertilizer)</div>
+      <div class="tick" data-animate="fade-up" data-delay="0.12"><span class="year">2017</span> Third Place — Provincial metal pen painting</div>
+      <div class="tick" data-animate="fade-up" data-delay="0.18"><span class="year">2016</span> Second Place — National metal pen painting</div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training" class="section">
+    <h2 class="section-title" data-animate="fade-up">Training & Certifications</h2>
+    <div class="cards">
+      <article class="card lift" data-animate="fade-up">
+        <h3>Genetic Engineering & Modern Biotechnology (Nov&nbsp;2023 – Aug&nbsp;2024)</h3>
+        <p class="muted">University of Isfahan — recombinant DNA, cloning, CRISPR–Cas9 for plant & microbial systems; molecular analysis & transformations.</p>
+      </article>
+      <article class="card lift" data-animate="fade-up" data-delay="0.06">
+        <h3>mRNA Technology in Research & Medicine (Oct&nbsp;2024)</h3>
+        <p class="muted">Design, delivery systems, LNP formulations; case studies in therapeutics & gene-expression regulation.</p>
+      </article>
+      <article class="card lift" data-animate="fade-up" data-delay="0.12">
+        <h3>Astrobiology — Introductory to Advanced (Aug&nbsp;2023)</h3>
+        <p class="muted">Interdisciplinary survey of extremophiles, origin-of-life models, and biosignature detection.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- VOLUNTEERING -->
+  <section id="volunteering" class="section">
+    <h2 class="section-title" data-animate="fade-up">Voluntary Collaborations</h2>
+    <div class="cards">
+      <article class="card lift" data-animate="fade-up">
+        <h3>TEDx University of Isfahan — Curation Member (Oct&nbsp;2024 – Jun&nbsp;2025)</h3>
+        <p class="muted">Speaker selection, talk development, storytelling refinement; strengthened communication & leadership.</p>
+      </article>
+      <article class="card lift" data-animate="fade-up" data-delay="0.06">
+        <h3>Rasta Association, Sharif University — Board Member (2024 – Present)</h3>
+        <p class="muted">Curriculum design and outreach; mentoring underprivileged secondary students via hands-on AI workshops.</p>
+      </article>
+      <article class="card lift" data-animate="fade-up" data-delay="0.12">
+        <h3>Course Instructor — Expert Systems (May&nbsp;2025)</h3>
+        <p class="muted">Ecological algorithms (Ant Colony Optimization, Particle Swarm Optimization) and bio-inspired modeling.</p>
+      </article>
+      <article class="card lift" data-animate="fade-up" data-delay="0.18">
+        <h3>Course Instructor — AI & Genetic Algorithms (Jan&nbsp;2025)</h3>
+        <p class="muted">Genetic Algorithms, Evolutionary Strategies, neural-network-based optimization; real-world problem solving.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title" data-animate="fade-up">Contact</h2>
+    <article class="card lift" data-animate="fade-up">
+      <p><strong>Email:</strong> <a href="mailto:mohadesehghaderiyan1234@gmail.com">mohadesehghaderiyan1234@gmail.com</a></p>
+      <p class="muted">Isfahan, Iran — Native Persian; Upper-Intermediate English (B2)</p>
+    </article>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Mohadeseh Ghaderian — All rights reserved.</footer>
+
+  <!-- Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+  <!-- App -->
   <script src="script.js"></script>
 </body>
 </html>
